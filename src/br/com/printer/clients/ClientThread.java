@@ -56,7 +56,7 @@ public class ClientThread extends Thread {
                 System.out.println(clientSocket.hashCode() + ": Conexão cliente encerrada");
             }
             else{
-                Logger.getLogger(ClientThread.class.getName(), Level.SEVERE, null );
+                Logger.getLogger(ClientThread.class.getName()).log(Level.SEVERE, null, ex );
             }
         }
     }

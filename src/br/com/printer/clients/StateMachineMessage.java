@@ -42,7 +42,7 @@ public class StateMachineMessage {
                     }
                     else{
                         ByteBuffer bb = ByteBuffer.wrap(new byte[]{data[i]});
-                        content.append(iso88591charset.decode(bb).toString())
+                        content.append(iso88591charset.decode(bb).toString());
                     }
                     break;
                 default:
